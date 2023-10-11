@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(photos/download-rzjaUvBYI-transformed.jpeg);
+    background-size: cover;
+}
+
+.container{
+    margin: auto;
+    background-color: rgba(123, 123, 130, 0.784);
+    width: 700px;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.421);
+}
+
+header div{
+    background-color: rgba(123, 123, 130, 0.784);
+    height: 90px;
+    border: 1px solid black;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    line-height: 90px;
+    font-size: large;
+}
+.titolo:hover{
+    color: rgba(0, 0, 0, 0.625);
+    text-decoration: underline;
+}
+
+header > div > img{
+    position: relative;
+    top: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 20%;
+}
+
+nav div{
+    background-color: rgba(123, 123, 130, 0.784);
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    line-height: 50px;
+    font-size: large;
+}
+main > div > img{
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    border: 1px solid black;
+    position: relative;
+    left: 20px;
+    margin-top: 20px;
+}
+main{
+    position: relative;
+}
+.fasi{
+    font-size: small;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 30%;
+    margin-top: 20px;
+}
+p{
+    margin: 2px;
+    color: white;
+}
+#cognome, #nome, #luogo_di_nascita, #nascita, #scadenza, #emissione{
+    font-size: medium;
+}
+
+#luogo_di_nascita, #nascita{
+    display: inline-block;
+}
+
+#scadenza2{
+    position: absolute;
+    right: 100px;
+    top: 60%;
+} 
+
+main span img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: 120px;
+    top: 20%;
+}
+footer div p{
+    font-size: large;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+}
+
+footer{
+    text-align: center;
+}

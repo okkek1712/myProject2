@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="photos/Mugnano_di_Napoli-Stemma.png" alt="">
+            <strong class="titolo">COMUNE DI MUGNANO</strong>
+        </div>
+        <nav>
+        <div id="titolo"></div>        
+        </nav>    
+    </header>
+
+    <div class="container">
+    <main>
+        <div>
+            <img src="photos/WhatsApp Image 2023-10-11 at 18.18.53.jpeg" alt="">
+        </div>
+        <span class="fasi">
+            <p>cognome/surname</p>
+            <p id="cognome"></p>
+            <p>nome/name</p>
+            <p id="nome"></p>
+            <p>luogo e data di nascita<br>Place and date of birth</p>
+            <p id="nascita"></p>
+            <p id="luogo_di_nascita"></p>
+            <p>emissione/issuing</p>
+            <p id="emissione"></p>
+        </span>
+        <span id="scadenza2">
+           <p>scadenza/expiry</p>
+           <p id="scadenza"></p>
+        </span>
+        <span>
+        <img src="photos/download-removebg-preview.png" alt="">
+    </span>
+    </main>
+    
+    </div>
+    <footer>
+        <div>
+            <strong><p>MYQCCIOLOTTY</p></strong>
+            <p><em><strong>powered by ciccio palumbo</strong></em></p>   
+        </div>
+    </footer>
+    
+
+
+    <script>
+        fetch('./carta.json')
+            .then((response) => response.json())
+            .then((json) => {
+                    document.getElementById("titolo").innerHTML = json.titolo;
+                    document.getElementById("cognome").innerHTML = json.cognome;
+                    document.getElementById("nome").innerHTML = json.nome;
+                    document.getElementById("luogo_di_nascita").innerHTML = json.luogo_di_nascita;
+                    document.getElementById("nascita").innerHTML = json.nascita;
+                    document.getElementById("scadenza").innerHTML = json.scadenza;
+                    document.getElementById("emissione").innerHTML = json.emissione;
+                });
+    </script>
+</body>
+</html>
